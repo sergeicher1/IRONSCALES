@@ -3,7 +3,6 @@ package ironscales_Selenium_POM.utilities;
 import ironscales_Selenium_POM.page_objects.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 public class BaseVariables {

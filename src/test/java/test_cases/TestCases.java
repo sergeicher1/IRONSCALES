@@ -29,7 +29,7 @@ public class TestCases extends CommonOperations {
 
 
     @Test(description = "Test Case 01")
-    @Description("Test Case 01 verifies presence of 3 elements")
+    @Description("Test Case 01 verifies presence of 3 elements in by plan section")
     public void testCase01() {
         workflows.VerifyPresenceOfElements();
     }

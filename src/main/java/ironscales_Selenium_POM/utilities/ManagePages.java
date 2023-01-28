@@ -1,7 +1,6 @@
 package ironscales_Selenium_POM.utilities;
 
 import ironscales_Selenium_POM.page_objects.*;
-import org.openqa.selenium.devtools.v85.page.Page;
 import org.openqa.selenium.support.PageFactory;
 
 public class ManagePages extends BaseVariables {

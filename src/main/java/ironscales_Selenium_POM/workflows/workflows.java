@@ -4,18 +4,11 @@ import io.qameta.allure.Step;
 import ironscales_Selenium_POM.utilities.CommonOperations;
 import ironscales_Selenium_POM.utilities.Helpers;
 import ironscales_Selenium_POM.utilities.UIActions;
-import org.aspectj.weaver.patterns.TypePatternQuestions;
-import org.checkerframework.checker.guieffect.qual.UI;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.numberOfWindowsToBe;
 
 public class workflows extends CommonOperations {
 
