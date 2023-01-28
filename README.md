@@ -1,4 +1,4 @@
-# IRONSCALES-JuniorTestPosition-JAVA
+# Ironscales_JavaSeleniumPOM
 [Click to see video description]()
 
     Please check the documentation section for:   
