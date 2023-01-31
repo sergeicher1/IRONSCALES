@@ -20,6 +20,7 @@
 package test_cases;
 
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import ironscales_Selenium_POM.utilities.CommonOperations;
 import ironscales_Selenium_POM.workflows.workflows;
@@ -31,23 +32,28 @@ public class TestCases extends CommonOperations {
     @Test(description = "Test Case 01")
     @Description("Test Case 01 verifies presence of 3 elements in by plan section")
     public void testCase01() {
+        Allure.description("Test Case 01 verifies presence of 3 elements in by plan section");
         workflows.VerifyPresenceOfElements();
     }
 
     @Test(description = "Test Case 02")
     @Description("Test Case 02 Validate year of experience bigger than 1y")
     public void testCase02() {
+
+        Allure.description("Test Case 02 Validate year of experience bigger than 1y");
         workflows.ValidateYearOfExperience();
     }
     @Test(description = "Test Case 03")
     @Description("Test Case 03 Validate that we have 5 icons for social media and validate the type of them")
     public void testCase03() throws InterruptedException {
+        Allure.description("Test Case 03 Validate that we have 5 icons for social media and validate the type of them");
         workflows.ScrollDownAndValidatePresenceOfElements();
     }
 
     @Test(description = "Test Case 04")
     @Description("Test Case 04 Validate that all 5 social links open the relevant page")
     public void testCase04() throws InterruptedException {
+        Allure.description("Test Case 04 Validate that all 5 social links open the relevant page");
         workflows.ValidateSocialLinks();
     }
 }
