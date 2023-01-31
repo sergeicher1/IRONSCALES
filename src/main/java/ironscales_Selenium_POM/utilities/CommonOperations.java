@@ -1,6 +1,9 @@
 package ironscales_Selenium_POM.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -42,5 +45,11 @@ public class CommonOperations extends BaseVariables {
         driver.quit();
         System.out.println("\nTest case completed!\n");
     }
+
+    @Attachment(value = "Page screenshot", type = "image/png")  // TODO: where to use it?
+    public byte[] SaveScreenshot(WebDriver driver) {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+    }
+
 }
 

@@ -1,5 +1,6 @@
 package ironscales_Selenium_POM.workflows;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import ironscales_Selenium_POM.utilities.CommonOperations;
 import ironscales_Selenium_POM.utilities.Helpers;
@@ -14,8 +15,9 @@ public class workflows extends CommonOperations {
 
     // Question number 1. On the 'solution' tab go to 'by plan'
     // Validate: there are 3 options called 'starter', 'email protect', and 'complete protect'.
-    @Step("Question 1 verify presence of 3 elements")
+//    Allure.step("Question 1 verify presence of 3 elements")
     public static void VerifyPresenceOfElements() {
+        Allure.step("Question 1 verify presence of 3 elements");
 
         // Mouse hover elements in dropdown till by plan is open
         UIActions.MouseHoverTwoEls(nav_bar.GetSolution(), sol_dropdown.GetByPlan());
@@ -39,9 +41,9 @@ public class workflows extends CommonOperations {
     // Question 2. Go to the 'Company' tab then go to careers open job opportunities and look
     // for the QA automation position, open the position
     // Validate: that year of experience is bigger than 1y.
-    @Step("Question 2 Validate that year of experience is bigger than 1y")
+//    @Step("Question 2 Validate that year of experience is bigger than 1y")
     public static void ValidateYearOfExperience() {
-
+        Allure.step("Question 2 Validate that year of experience is bigger than 1y");
         // Mouse hover and click careers link
         UIActions.MouseHover(nav_bar.GetCompany());
         UIActions.MouseHoverAndClick(comp_dropdown.GetCareers());
@@ -66,9 +68,9 @@ public class workflows extends CommonOperations {
     // Validate 1: we have 5 icons for social media and validate the type:
     // FB, YouTube, LinkedIn, Instagram, and tweeter
 
-    @Step("Question 3.1 Validate that we have 5 icons for social media and validate the type of them")
+    //    @Step("Question 3.1 Validate that we have 5 icons for social media and validate the type of them")
     public static void ScrollDownAndValidatePresenceOfElements() throws InterruptedException {
-
+        Allure.step("Question 3.1 Validate that we have 5 icons for social media and validate the type of them");
         // Expected text of icons
         ArrayList<String> expected = new ArrayList<>(Arrays.asList("LinkedIn In1_layer", "YouTube2_layer", "Twitter3_layer", "Facebook F4_layer", "Instagram5_layer"));
 
@@ -87,9 +89,9 @@ public class workflows extends CommonOperations {
     }
 
     // Validate 2: Each of the link open relevant page
-    @Step("Question 3.2 Validate all 5 social links open relevant page")
+//    @Step("Question 3.2 Validate all 5 social links open relevant page")
     public static void ValidateSocialLinks() throws InterruptedException {
-
+        Allure.step("Question 3.2 Validate all 5 social links open relevant page");
         // Scroll down to footer
         Helpers.ScrollToFooter();
 
